@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="all">
+  <meta name="author" content="Tencent-CP">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description"
+    content="《天涯明月刀》古龙正版授权，端游核心团队打造的腾讯旗舰·国风大世界手游。行业领先的美术技术，数十个可攻略NPC，更可逆天改命，体验指尖上的平行宇宙！你心动的每一刻，就是天涯。">
+  <meta name="Keywords"
+    content="天涯明月刀手游，天刀手游，腾讯,腾讯游戏,天涯明月刀,天刀,手游,天刀手游,天涯明月刀ol,腾讯手游,国风手游,捏脸,武侠,武侠游戏,开放世界,古龙,古龙改编,古龙游戏,游戏下载">
+  <meta itemprop="name" content="《天涯明月刀手游》预约站-腾讯游戏">
+  <title>《天涯明月刀手游》预约站-腾讯游戏-腾讯旗舰·国风大世界手游</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./lib/normalize/normalize.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="wrap1">
+    <div class="wrap1-bg">
+      <video src="./video/header-video.mpeg" x-webkit-airplay="true" webkit-playsinline="" playsinline="true"
+        width="1920" height="900" class="header-video" autoplay="" loop="" muted=""></video>
+      <div class="header">
+        <div class="btn">
+          <a href="main.html" class="sp btn-top-main" onclick="PTTSendClick('btn','topmain','通头进入官网');">
+            <span>进入官网</span>
+          </a>
+          <a href="index1.html" class="sp btn-top-yy" onclick="PTTSendClick('btn','topyuyue','通头内测招募');">
+            <span>内测招募</span>
+          </a>
+        </div>
+      </div>
+      <div class="header_login">
+        <div id="unlogin">
+          <p>您好，请<a href="javascript:loginEntry();">【登录】</a></p>
+        </div>
+        <div id="logined" style="display:none;">hi，<span id='userinfo'></span>&nbsp;&nbsp;<a id="dologout"
+            href="javascript:void(0);">【注销】</a></div>
+      </div>
+      <section class="kv">
+        <h2 class="slogan">天涯明月刀<span class="type">手游</span></h2>
+        <div class="video-div">
+          <span class="sp"></span>
+          <a class="sp head_video" href="javascript:void(0);" data-vid="y0876ma0hwb"
+            onclick="PTTSendClick('btn','video','播放视频');"></a>
+        </div>
+        <div class="bot">
+          <a href="javascript:showPopDialog('popYySuccess');" class="btn-yy"
+            onclick="PTTSendClick('btn','yuyue','立即预约');" id="yy">
+            <span class="spr btn"> 完成预约 尽享四重大礼 </span>
+            <span class="wrap"></span>
+          </a>
+          <!-- 已预约 S -->
+          <a href="javascript:showPopDialog('popInvite2');" class="booked" onclick="PTTSendClick('btn','booked','已预约');"
+            style="display: none;" id="yx">
+            <span class="spr btn"> 邀请好友 赢取丰厚大礼 </span>
+            <span class="wrap"></span>
+          </a>
+          <!-- 已预约 E -->
+          <a href="javascript:showPopDialog('popYySuccess');" class="spr btn-iphone"
+            onclick="PTTSendClick('btn','bind','绑定手机');">
+            <span class="icon">绑定手机</span>
+            <span class="text">惊喜好礼</span>
+          </a>
+          <!-- 已绑定手机 S -->
+          <a href="javascript:;" class="btn-ybd" onclick="PTTSendClick('btn','ybind','已绑定手机');" style="display: none;">
+            <span class="icon">绑定手机</span>
+            <span class="text">惊喜好礼</span>
+          </a>
+          <!-- 已绑定手机 E -->
+          <a href="javascript:showPopDialog('popInvite2');" class="spr btn-share"
+            onclick="PTTSendClick('btn','share','分享天涯');">
+            <span class="icon">分享天涯</span>
+            <span class="text">再得奖励</span>
+          </a>
+          <a href="index1.html" class="spr btn-zm" onclick="PTTSendClick('btn','btn-zm','内测招募');">
+            <span class="icon">内测招募</span>
+            <span class="text">天命回馈</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="wrap2">
+    <div class="leafContainer" id="leafContainer"></div>
+    <div class="main1">
+      <div class="event1" id="event1">
+        <div class="box">
+          <h3 class="box-hd">预约即得</h3>
+          <ul class="bags">
+            <li class="b1">
+              <span class="text">灵殊<span class="dot">&middot;</span>祈天卷</span>
+            </li>
+            <li class="add"></li>
+            <li class="b b2">碎银*88888</li>
+            <li class="b b3">劫火石母*20</li>
+            <li class="b b4">侠影研习录&middot;二*5</li>
+          </ul>
+        </div>
+      </div>
+      <div class="event2" id="event2">
+        <section class="countyy">
+          <h3 class="countyy-hd">
+            <div class="hd" style="line-height:0.8rem;">全平台已有 <span class="num" id="yy_countnum">22,44,285</span> 位
+            </div>
+            <div class="sub">少侠预约《天涯明月刀手游》</div>
+          </h3>
+          <!--stone100 stone150 stone200 stone350 stone500 stone650 stone800 stone1000 stone1200 stone1400-->
+          <div class="timeline" id="stageNum">
+            <div class="timeline-hd">
+              <div class="line line-bot">
+                <!-- <div class="char"></div> -->
+                <div class="line line-top">
+                  <div class="char"></div>
+                </div>
+                <ul class="node-list">
+                  <li class="node node1"><span>100万</span></li>
+                  <li class="node node2"><span>200万</span></li>
+                  <li class="node node3"><span>500万</span></li>
+                  <li class="node node4"><span>800万</span></li>
+                  <li class="node node5"><span>1200万</span></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="timeline-bd">
+              <li class="card card1">
+                <div class="card-bd">
+                  <div class="status status1">已达成</div>
+                  <div class="giftbox">
+                    <div class="bd icon1"></div>
+                    <h4 class="hd">一级修为丹<span class="num">*10</span></h4>
+                  </div>
+                  <div class="giftbox">
+                    <div class="bd icon2"></div>
+                    <h4 class="hd">精工材料<span class="num">*20</span></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="card card2">
+                <div class="card-bd">
+                  <div class="status status2">已达成</div>
+                  <div class="giftbox">
+                    <div class="bd icon3"></div>
+                    <h4 class="hd">精纯石母<span class="num">*10</span></h4>
+                  </div>
+                  <div class="giftbox">
+                    <div class="bd icon4"></div>
+                    <h4 class="hd">一级寒石<span class="num">*10</span></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="card card3">
+                <div class="card-bd">
+                  <div class="status status3">已达成</div>
+                  <div class="giftbox">
+                    <div class="bd icon5"></div>
+                    <h4 class="hd">侠影<span class="num">研习录&middot;一*1</span></h4>
+                  </div>
+                  <div class="giftbox">
+                    <div class="bd icon6"></div>
+                    <h4 class="hd">劫火石母<span class="num">*6</span></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="card card4">
+                <div class="card-bd">
+                  <div class="status status4">已达成</div>
+                  <div class="giftbox">
+                    <div class="bd icon7"></div>
+                    <h4 class="hd">铸神令<span class="num">*10</span></h4>
+                  </div>
+                  <div class="giftbox">
+                    <div class="bd icon8"></div>
+                    <h4 class="hd">铸灵玉<span class="num">*10</span></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="card card5">
+                <div class="card-bd">
+                  <div class="status status5">已达成</div>
+                  <div class="giftbox">
+                    <div class="bd icon9"></div>
+                    <h4 class="hd">绑点<span class="num">*188</span></h4>
+                  </div>
+                  <div class="giftbox">
+                    <div class="bd icon10"></div>
+                    <h4 class="hd">破阵传心丹<span class="num">*5</span></h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="event3" id="event3">
+        <section class="inviteyy">
+          <h3 class="inviteyy-hd">呼朋唤友 <span class="more">更多福利</span></h3>
+          <a href="javascript:showPopDialog('popInvite2');" class="sp btn-invite"
+            onclick="PTTSendClick('btn','invite','邀请好友');"><span>邀请好友</span></a>
+          <div class="countnum"><a href="javascript:showPopDialog('popInviteList');" id="inviteList">已邀请<span
+                class="num" id="friendNum">0</span>名好友</a></div>
+          <div class="tree-l"></div>
+          <div class="tree-r"></div>
+          <ul class="invite-list">
+            <li class="invite-item">
+              <div class="invite-box invite-box1">
+                <div class="box-hd">邀请<span class="num">2</span>人</div>
+                <div class="giftbox">
+                  <div class="bd icon11"></div>
+                  <h4 class="hd">碎银*88888</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon6"></div>
+                  <h4 class="hd">劫火石母*20</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon4"></div>
+                  <h4 class="hd">一级寒石*10</h4>
+                </div>
+              </div>
+              <a href="javascript:giftExchange(1);" class="sp btn-lq btn-lq1"
+                onclick="PTTSendClick('btn','lq1','领取邀请奖励1');">领取</a>
+            </li>
+            <li class="invite-item">
+              <div class="invite-box invite-box2">
+                <div class="box-hd">邀请<span class="num">5</span>人</div>
+                <div class="giftbox">
+                  <div class="bd icon11"></div>
+                  <h4 class="hd">碎银*188888</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon6"></div>
+                  <h4 class="hd">劫火石母*30</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon4"></div>
+                  <h4 class="hd">一级寒石*20</h4>
+                </div>
+              </div>
+              <a href="javascript:giftExchange(2);" class="sp btn-lq btn-lq2"
+                onclick="PTTSendClick('btn','lq2','领取邀请奖励2');">领取</a>
+            </li>
+            <li class="invite-item">
+              <div class="invite-box invite-box3">
+                <div class="box-hd">邀请<span class="num">8</span>人</div>
+                <div class="giftbox">
+                  <div class="bd icon11"></div>
+                  <h4 class="hd">碎银*388888</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon6"></div>
+                  <h4 class="hd">劫火石母*50</h4>
+                </div>
+                <div class="giftbox">
+                  <div class="bd icon4"></div>
+                  <h4 class="hd">一级寒石*30</h4>
+                </div>
+              </div>
+              <a href="javascript:giftExchange(3);" class="sp btn-lq btn-lq3"
+                onclick="PTTSendClick('btn','lq3','领取邀请奖励3');">领取</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="wrap3">
+    <div class="main2">
+      <div class="event4" id="event4">
+        <section class="lottery">
+          <h3 class="lottery-hd">天涯抽奖 <span class="more">好礼相伴</span></h3>
+          <div class="lottery-count">剩余<span class="num" id="lott_num">0</span>次</div>
+          <div class="lottery-bd">
+            <a class="lottery-btn" id="lott_btn" onclick="PTTSendClick('btn','choujiang','点击抽奖');">点击抽奖</a>
+            <div id="swfcontent"></div>
+            <div class="cn c1"></div>
+            <div class="cn c2"></div>
+            <div class="cn c3"></div>
+            <div class="cn c4"></div>
+          </div>
+          <div class="lottery-ft">
+            <a href="JavaScript:;" class="rules" id="cjRules" onclick="PTTSendClick('btn','cjrules','抽奖规则');">抽奖规则</a>
+            <a href="JavaScript:;" class="record" id="cjRecord"
+              onclick="PTTSendClick('btn','cjrecord','抽奖记录');">我的抽奖记录</a>
+            <a href="JavaScript:;" class="addinfo" id="fillPersonInfo_571529"
+              onclick="PTTSendClick('btn','cjform','填写奖励地址');">实物奖励地址填写</a>
+          </div>
+        </section>
+      </div>
+      <div class="event5" id="event5">
+        <section class="feature">
+          <h3 class="feature-hd">游戏特色 <span class="more">心动江湖</span></h3>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src=".//picture/f1.jpg" alt="">
+                <div class="text text1"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src=".//picture/f2.jpg" alt="">
+                <div class="text text2"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src=".//picture/f3.jpg" alt="">
+                <div class="text text3"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src=".//picture/f4.jpg" alt="">
+                <div class="text text4"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src=".//picture/f5.jpg" alt="">
+                <div class="text text5"></div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+      </div>
+      <div class="event6" id="event6">
+        <section class="rulesblock">
+          <h3 class="rulesbl-hd">活动规则</h3>
+          <ul class="rulesbl-list">
+            <li class="item"><span>1</span> 活动时间：2019年5月28日起至不删档测试开启当天0点结束。</li>
+            <li class="item"><span>2</span> 活动期间，玩家完成预约即可获得抽奖礼包，绑定手机还可获得额外奖励。</li>
+            <li class="item"><span>3</span> 预约活动结束后，所有官网预约玩家在不删档测试时，均可获得已解锁的最高里程碑奖励，届时请注意发放通知。</li>
+            <li class="item"><span>4</span> 预约及绑定手机均可获得1次抽奖机会，每成功邀请1位好友可获得1次抽奖机会。</li>
+            <li class="item"><span>5</span> 单个账号每日仅限抽5次，活动期间抽奖总次数限20次。</li>
+            <li class="item"><span>6</span> 游戏礼包请于游戏内领取，届时请关注官网公告信息与游戏内公告.</li>
+            <li class="item"><span>7</span> 实物礼品将于活动结束后30个工作日内进行寄送，逾期未填写与误填收件信息，视为放弃奖励资格处理。</li>
+            <li class="item"><span>8</span> 如使用外挂等不正当方式参加本活动的，官方将有权取消用户参与及获奖资格。</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- 侧边导航 S -->
+  <div class="sid">
+    <div class="side-nav" id="side-nav">
+      <a href="javascript:;" class="sid-a1" title="预约有礼" onclick="PTTSendClick('btn','sid-a1','预约有礼');"></a>
+      <a href="javascript:;" class="sid-a2" title="呼朋唤友" onclick="PTTSendClick('btn','sid-a2','呼朋唤友');"></a>
+      <a href="javascript:;" class="sid-a3" title="天涯抽奖" onclick="PTTSendClick('btn','sid-a3','天涯抽奖');"></a>
+      <a href="javascript:;" class="sid-a4" title="游戏特色" onclick="PTTSendClick('btn','sid-a4','游戏特色');"></a>
+      <a href="javascript:;" class="sid-a5" title="活动规则" onclick="PTTSendClick('btn','sid-a5','活动规则');"></a>
+    </div>
+    <a href="main.html" class="sid-a6" title="进入官网" onclick="PTTSendClick('btn','sid-a6','侧边导航进入官网');"></a>
+    <div class="sid-div">
+      <img src=".//picture/sid-img.png" alt="" width="162" height="162">
+      <p>扫码关注官方微信<br>领取惊喜好礼</p>
+    </div>
+  </div>
+  <!-- 侧边导航 E -->
+  <div class="popmask"></div>
+  <!-- 登录 -->
+  <div class="pop popbg" id="popLogin">
+    <a href="javascript:;" class="closebtn popbg"></a>
+    <h3>请登录</h3>
+    <ul class="login">
+      <li><a href="javascript:LoginManager.login();" class="sqbtn popbg fs0">手Q登录</a><span>手Q登录</span></li>
+      <li><a href="javascript:;" class="wxbtn popbg fs0" id="wxLogin">微信登录</a><span>微信登录</span></li>
+    </ul>
+  </div>
+  <!-- 选择系统 -->
+  <!-- <div class="pop popbg" id="popOs">
+        <a href="javascript:;" class="closebtn popbg"></a>
+        <h3>请选择系统</h3>
+        <ul class="system">
+            <li><label><input name="syst" type="radio" value="1" />安卓</label></li>
+            <li><label><input name="syst" type="radio" value="2" />IOS</label></li>
+        </ul>
+        <div class="keynum">邀请码：<input type="text" name="key" /></div>
+        <a href="javascript:;" class="yesbtn popbg fs0">确定</a>
+    </div> -->
+  <!-- 绑定成功 -->
+  <div class="popcm" id="popBindSuccess">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <p class="bdcg">恭喜绑定成功，获得礼包！</p>
+      <div class="giftlist">
+        <ul>
+          <li class="giftbox">
+            <div class="bd icon11"></div>
+            <h4 class="hd">碎银*88888</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon7"></div>
+            <h4 class="hd">铸神令*10</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon8"></div>
+            <h4 class="hd">铸灵玉*10</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 请输入正确的验证码 -->
+  <div class="popts tsbg" id="popWarnYzm">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <p class="bdcgp">请输入正确的验证码！</p>
+  </div>
+  <!-- 请更换手机号 -->
+  <div class="popts tsbg" id="popWarnPhone">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <p class="bdcgp">该手机已预约，请更换手机号！</p>
+  </div>
+  <!-- 您已经绑定过手机了 -->
+  <div class="popts tsbg" id="popWarnBind">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <p class="bdcgp">您已经绑定过手机了</p>
+  </div>
+  <!-- 已邀请好友 -->
+  <div class="popts tsbg" id="popInvite">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <h3>已邀请好友</h3>
+    <p class="yyqhy">您还未邀请好友哦~<br>快去邀请吧！</p>
+  </div>
+  <!-- 领取成功 -->
+  <div class="popts tsbg" id="popGetSuccess">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <p class="bdcgp">恭喜领取成功~</p>
+  </div>
+  <!-- 恭喜获得xxx -->
+  <div class="popts tsbg" id="popCongratulation">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <p class="bdcgp">恭喜获得【XXX】~</p>
+  </div>
+  <!-- 实物奖励填写 -->
+  <div class="popcm" id="popFillForm">
+    <!-- <div class="popcm" id="personInfoContent_571529"> -->
+    <a href="javascript:;" id="colseLayer_571529" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <h3>实物奖励填写</h3>
+      <form id="user_userInfoform_571529" name="user_userInfoform_571529">
+        <ul class="jltx">
+          <li><span>收件人</span><input type="text" name="sName"></li>
+          <li><span>联系电话</span><input type="text" name="sMobile"></li>
+          <li><span>所在城市</span>
+            <select name="sProvince" id="province_571529" style="width:100px;"></select>
+            <select name="sCity" id="city_571529" style="width:100px;"></select>
+          </li>
+          <li><span>收件地址</span><input type="text" name="sAddress"></li>
+          <li><span>身份证</span><input type="text" name="sIdentity"></li>
+        </ul>
+        <a href="javascript:;" id="personInfoContentBtn_571529" class="okbtn btnbg fs0">确定</a>
+      </form>
+    </div>
+  </div>
+  <!-- 获奖记录 -->
+  <div class="popcm" id="popRecord">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <h3>获奖记录</h3>
+      <div class="hjlist">
+        <table width="100%" border="" cellspacing="1" cellpadding="0">
+          <tr>
+            <th class="title">获奖时间</th>
+            <th class="title">所获物品</th>
+          </tr>
+          <tbody id="packageLog">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- 抽奖规则 -->
+  <div class="popcm" id="popPrizeRules">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <h3>抽奖规则</h3>
+      <div class="cjgz">
+        <p><span>1</span>活动日期：2019年5月28日至游戏不删档开启当天0点结束。</p>
+        <p><span>2</span>抽奖资格：<br> 1）成功完成预约获得1次抽奖机会<br> 2）绑定手机获得1次抽奖机会<br> 3）邀请好友获得1次抽奖机会<br>
+          4）单个账号每日限抽取5次，活动期间玩家抽奖上限为20次 </p>
+        <p>
+          <span>3</span> 实物奖励发放方式：<br>
+          玩家抽中实物奖励后，点击【实物奖励填写地址】填写信息，奖励将在预约活动结束后的30个工作日内发放。玩家如在活动结束后的一周内未填写地址，或误填收件信息，则视为放弃奖励。 </p>
+        <p>
+          <span>4</span> 本页面为收集地址的唯一方式，不收取任何费用，谨防诈骗，请勿给他人汇款。 </p>
+      </div>
+    </div>
+  </div>
+  <!-- 已邀请好友 -->
+  <div class="popcm" id="popInviteList">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <h3>已邀请好友</h3>
+      <div class="rank-wp2">
+        <ul class="player">
+          <!-- <li><img src="//game.gtimg.cn/images/ty/cp/a20190522order/user.jpg" alt=""><span>烤地瓜师傅</span></li> -->
+        </ul>
+      </div>
+      <p class="p-gd">下拉查看更多</p>
+    </div>
+  </div>
+  <!-- 呼朋唤友 -->
+  <div class="popcm popcmx" id="popInvite2">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <h3 class="s1">呼朋唤友</h3>
+      <div class="hphy">邀请好友，共饮江湖<br>赢取招募奖励，更得抽奖机会！</div>
+      <!-- <div class="yqm"><span>我的邀请码：</span>XXXXX</div> -->
+      <div class="ewm">
+        <p><strong>方法一</strong>手机QQ或者微信扫描二维码，分享给好友预约</p>
+        <div id="qrcode"></div>
+        <!-- <img src="//game.gtimg.cn/images/ty/cp/a20190522order/ewm.png" alt="" id="qrcode"> -->
+      </div>
+      <p class="ewm-p"><strong>方法二</strong>复制专属邀请链接，发送好友进行预约</p>
+      <!-- <input class="inp1" type="text" /> -->
+      <textarea cols="30" rows="5" id="textarea1" class="inp1"></textarea>
+      <a href="javascript:copyUrl2('textarea1');" class="fzbtn btnbg fs0">复制链接</a>
+      <p class="txt">好友预约成功，赢取惊喜奖励！</p>
+      <div class="giftlist">
+        <ul>
+          <li class="giftbox">
+            <div class="bd icon11"></div>
+            <h4 class="hd">碎银*88888</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon6"></div>
+            <h4 class="hd">劫火石母*10</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon4"></div>
+            <h4 class="hd">一级寒石*30</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 预约成功（新） -->
+  <div class="popcm" id="popYySuccess">
+    <a href="javascript:;" class="closebtn tsbg"></a>
+    <div class="cmbg p1"></div>
+    <div class="cmbg p2">
+      <div class="yycg">
+        <img src=".//picture/user.jpg" alt="" id="invheadimg">
+        <strong>恭喜预约成功!</strong> 欢迎少侠来到天刀江湖，<br>参与活动尽享四重好礼！ </div>
+      <div class="jytx">请选择手机系统 <ul class="system2">
+          <li><label><input name="syst2" type="radio" value="1">安卓</label></li>
+          <li><label><input name="syst2" type="radio" value="0">IOS</label></li>
+        </ul>
+      </div>
+      <div class="jytx">
+        <span>手机</span>
+        <input type="text" class="sj" id="inviPhone">
+      </div>
+      <div class="jytx">
+        <span>验证码</span>
+        <input type="text" class="yzm" id="inviMsgCode">
+        <input onclick="getCode(this)" class="hqbtn" value="获取" readonly="readonly">
+      </div>
+      <!-- <div class="jytx">
+                <span>邀请码</span>
+                <input type="text" class="sj" value="没有可不填~" />
+            </div> -->
+      <a href="javascript:bindPhone();" class="bdbtn btnbg fs0">绑定领奖</a>
+      <p class="tx1">绑定手机即领取</p>
+      <div class="giftlist">
+        <ul>
+          <li class="giftbox">
+            <div class="bd icon11"></div>
+            <h4 class="hd">碎银*88888</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon7"></div>
+            <h4 class="hd">铸神令*10</h4>
+          </li>
+          <li class="giftbox">
+            <div class="bd icon8"></div>
+            <h4 class="hd">铸灵玉*10</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 视频弹出层 -->
+  <div class="vid-dia" id="vidDia" style="display:none">
+    <div class="vid-dia-div">
+      <div class="dia-con">
+        <div id="videoCon"></div>
+      </div>
+      <a class="video-close closebtn tsbg" href="javascript:void(0);" title="关闭"></a>
+    </div>
+  </div>
+  <div id="gfooter" ams="/36759/58704/m21147" dark="1" ieg-logo="1">
+    <div class="foot_top">
+      <p class="healthy"><span class="bk">本网络游戏适合年满<b
+            style="color:#ca2b00;">14周岁以上</b>的用户使用；请您确定已如实进行实名注册；为了您的健康，请合理控制游戏时间。</span><strong>健康游戏公告:</strong><span>抵制不良游戏</span>&nbsp;<span>拒绝盗版游戏</span>&nbsp;<span>注意自我保护</span>&nbsp;<span>谨防受骗上当</span>&nbsp;<span>适度游戏益脑</span>&nbsp;<span>沉迷游戏伤身</span>&nbsp;<span>合理安排时间</span>&nbsp;<span>享受健康生活</span>
+      </p>
+    </div>
+    <span title="北极光" class="foot_left gfooter_selflogo"></span>
+  </div>
+</body>
+<script src="./lib/jQuery/jquery-3.4.1.min.js"></script>
+<script src="./lib/swiper/js/swiper.min.js.map"></script>
+<script src="./js/index.js"></script>
+<script>
+  // 
+</script>
+</html>
