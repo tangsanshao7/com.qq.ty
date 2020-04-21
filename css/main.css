@@ -1,0 +1,326 @@
+/* 
+.arrow,
+.audio .on,
+.audio-btn,
+.audio-play,
+.bl,
+.btn-type1,
+.btn-type2,
+.btn-type3,
+.check-more,
+.circle,
+.close-btn3,
+.date-cir,
+.date-cir2,
+.home .slide_time .on,
+.home-lead,
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.luntan,
+.magnifier,
+.name-board,
+.nav_cur_on,
+.nav_dec,
+.new-nav-r,
+.news .news-con .left .news_nav a:after,
+.news .news-con:before,
+.news-bg,
+.news-bor,
+.note,
+.on-audio,
+.plus-icon,
+.qq,
+.role-dec,
+.sects .role-tab .on,
+.sects .role-tab:before,
+.slide-on,
+.slide_time,
+.slider-bar a:hover,
+.slogan1,
+.slogan3,
+.sprite-img,
+.title1,
+.title2,
+.title3,
+.title4,
+.top_btn,
+.top_logo,
+.top_menu .top_nav .nav_cur:after,
+.top_menu .top_nav .nav_item_before:before,
+.video-btn,
+.wechat,
+.weibo {
+  background-image: url(../image/sprite-img.png);
+  background-size: 2144px 1101px;
+  background-repeat: no-repeat;
+} */
+
+.wrapper {
+  width: 100%;
+  color: #a19891;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  min-width: 1300px;
+}
+
+.pagebox1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.bg-img {
+  width: 100%;
+  display: block;
+}
+
+.main {
+  margin-left: -960px;
+  width: 1920px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.petal {
+  background: url(../image/petal.png) no-repeat;
+  width: 1836px;
+  height: 1389px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.logo {
+  background: url(../image/logo.png) no-repeat;
+  width: 183px;
+  height: 78px;
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 54px;
+  z-index: 999;
+}
+
+.sp {
+  background: url(../image/sp.png) no-repeat;
+}
+
+.head_list ul {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+
+.head_list ul li {
+  float: left;
+  width: 72px;
+  height: 72px;
+}
+
+.head_list ul li a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.head_list ul li a:hover span {
+  display: block;
+  margin-top: -20px;
+}
+
+.head_list ul li a span {
+  font-size: 14px;
+  color: #ffffff;
+  display: none;
+  text-align: center;
+}
+
+.icon1 {
+  background-position: -179px -122px;
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.icon2 {
+  background-position: -247px -122px;
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.icon3 {
+  background-position: -312px -122px;
+  display: block;
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+
+.icon4 {
+  background-position: -380px -122px;
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.icon5 {
+  background-position: -448px -122px;
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.icon3 em {
+  width: 120px;
+  height: 125px;
+  background: url(../image/ewm-top.png) no-repeat;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 100;
+  transition: all 1.5s;
+  opacity: 0;
+}
+
+.icon3:hover em {
+  opacity: 1;
+  top: 75px;
+}
+
+.icon1:hover {
+  background-position: -171px 0;
+}
+
+.icon2:hover {
+  background-position: -259px -3px;
+}
+
+.icon3:hover {
+  background-position: -350px -1px;
+}
+
+.icon4:hover {
+  background-position: -435px -1px;
+}
+
+.icon5:hover {
+  background-position: -521px -1px;
+}
+
+.slogan-box {
+  width: 1265px;
+  margin: 0 auto;
+  padding-top: 260px;
+  height: 808px;
+}
+
+.slogan-box .slogan-span {
+  width: 1265px;
+  height: 386px;
+  background: url(../image/slogan.png) no-repeat;
+  margin: 0 auto 70px;
+  position: relative;
+  z-index: 21;
+}
+
+.slogan-box .btn-yy {
+  width: 475px;
+  height: 135px;
+  background-position: 0 -474px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slogan-box .btn-yy em {
+  position: absolute;
+  top: 20px;
+  left: 77px;
+  z-index: 1;
+  width: 319px;
+  height: 94px;
+  background-color: #a78f4c;
+  content: "";
+  -webkit-animation: bw3 2s ease infinite;
+  animation: bw3 2s ease infinite;
+  border-radius: 50px;
+}
+
+.slogan-box .btn-yy span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -285px;
+  z-index: 1;
+  width: 570px;
+  height: 133px;
+  background: url(../image/btn-inc.png) no-repeat;
+  content: "";
+  -webkit-animation: bw3 2s ease infinite;
+  animation: bw3 2s ease infinite;
+  border-radius: 50px;
+}
+
+@-webkit-keyframes bw3 {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@keyframes bw3 {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.slogan-box .inc1 {
+  width: 28px;
+  height: 52px;
+  display: block;
+  background-position: -1020px -28px;
+  -webkit-animation: arrow 3s 0s infinite both;
+  margin: 50px auto;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+  }
+
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+  }
+}

@@ -572,6 +572,7 @@ body {
 .timeline-bd {
   position: relative;
   z-index: 1;
+  top: 40px;
 }
 .card {
   position: absolute;
@@ -617,6 +618,7 @@ body {
 .card1 {
   top: 0;
   left: 156px;
+  transition: all 1s;
 }
 .card1 .card-bd {
   background-position: 0 0;
@@ -624,6 +626,7 @@ body {
 .card2 {
   top: 14px;
   left: 341px;
+  transition: all 1s;
 }
 .card2 .card-bd {
   background-position: -185px 0;
@@ -631,6 +634,7 @@ body {
 .card3 {
   top: 0;
   left: 528px;
+  transition: all 1s;
 }
 .card3 .card-bd {
   background-position: -367px 0;
@@ -638,6 +642,7 @@ body {
 .card4 {
   top: 14px;
   left: 712px;
+  transition: all 1s;
 }
 .card4 .card-bd {
   background-position: -553px 0;
@@ -645,6 +650,7 @@ body {
 .card5 {
   top: 0;
   left: 890px;
+  transition: all 1s;
 }
 .card5 .card-bd {
   background-position: -733px 0;
@@ -712,13 +718,17 @@ body {
   transition: 1.5s opacity 0.2s ease-in;
 }
 .timeline .line-top.active {
-  width: 10%;
+  width: 100%;
+  transition: all 1s;
 }
 .stone100 .line-top.active {
-  width: 15%;
+  width: 100%;
+
+  transition: all 1s;
 }
-.stone100 .char {
+.stone100 .char.active {
   left: 133px;
+  transition: all 1s;
 }
 .stone100 .node1 {
   color: #000;
@@ -1342,7 +1352,7 @@ body {
   top: 0;
   left: 0;
   z-index: 998;
-  display: none;
+  display: black;
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -1368,7 +1378,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 999;
-  display: none;
+  display: black;
   width: 560px;
   height: 367px;
   background-position: 0 -46px;
@@ -2127,6 +2137,7 @@ ul.system2 li input {
 
 #gfooter {
   background-color: #000;
+  margin-bottom: 100px;
 }
 
 #gfooter a {
@@ -2140,14 +2151,23 @@ ul.system2 li input {
 #gfooter .foot_top .bk {
   display: block;
 }
-
+.foot_left {
+  float: left;
+  text-indent: -999em;
+  overflow: hidden;
+  margin: 10px 0 0 10px;
+  height: 35px;
+}
 #gfooter .gfooter_selflogo {
   width: 109px;
-  background-image: url(static/image/nav-copy.png);
+  /* background-image: url(./image/nav-copy.png); */
+  background-image: url(../image/nav-copy.png);
   background-repeat: no-repeat;
   background-position: -1690px 0;
 }
-
+.foot_dark .foot_ieg_logo {
+  background: url(../image/foot-dark.png);
+}
 #afooter .foot {
   font-size: 12px;
   text-align: center;
@@ -2155,8 +2175,70 @@ ul.system2 li input {
   background: #000;
   color: #aaa;
 }
-
 #afooter .foot a {
   color: #aaa;
   text-decoration: none;
+}
+
+.foot_dark a {
+  color: #494949;
+}
+.foot_links {
+  display: inline;
+  float: right;
+  width: 682px;
+  list-style: none;
+}
+.foot_ieg_logo {
+  float: left;
+  width: 180px;
+  height: 35px;
+  text-indent: -999em;
+  overflow: hidden;
+  margin: 10px 0 0 10px;
+}
+.swfcontent_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1044px;
+  height: 745px;
+}
+.swfcontent_start {
+  position: absolute;
+  width: 306px;
+  height: 204px;
+  left: 368px;
+  top: 271px;
+  display: block;
+  cursor: pointer;
+  backface-visibility: hidden;
+  outline: none;
+  background: url(../image/blankstartbtn.png) no-repeat;
+  animation: 1s ease 0s infinite alternate none running swfcontent_borderLight;
+}
+.swfcontent_slight {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  animation: 3s ease 0s infinite normal none running swfcontent_bgLight;
+}
+
+.swfcontent_hover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 304px;
+  height: 204px;
+  display: none;
+  background: url(../image/sel.png) no-repeat;
+}
+
+@keyframes swfcontent_bgLight {
+  0% {
+    background-position: -500px 0px;
+  }
+  100% {
+    background-position: 500px 0px;
+  }
 }
