@@ -1,4 +1,6 @@
 $(function () {
+  $(window).scrollTop(0);
+
   $("#unlogin").on('click', 'a', function () {
     $("#popLogin").show();
     $(".popmask").show();

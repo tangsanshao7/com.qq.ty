@@ -881,6 +881,13 @@ body {
 .event3 {
   padding-top: 30px;
 }
+
+.event3-right .event-right-video{
+  display: none !important;
+}
+.event-right-video.active{
+  display: block  !important;
+}
 .inviteyy {
   position: relative;
   z-index: 1;
