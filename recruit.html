@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="robots" content="all">
+  <meta name="author" content="Tencent-CP">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="《天涯明月刀手游》正式公布！全新天命系统上线，累积天命点，赢取首测资格！">
+  <meta name="Keywords" content="天涯明月刀,手游,天涯明月刀ol,开放世界,双阵营,全新剧情,奇遇,腾讯游戏,网游,腾讯网游,电影网游,武侠,武侠游戏,武侠网游,古龙,古龙改编,古龙游戏,游戏下载">
+  <title>天命积分站-天涯明月刀手游-腾讯游戏</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./lib/normalize/normalize.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/recruit.css">
+</head>
+
+<body>
+  <div class="g-wrap">
+    <div class="page-nav">
+      <div class="nav">
+        <a class="logo" target="_blank" href="index.html" onclick="PTTSendClick('btn','btn-logo','logo')"></a>
+        <div class="nav-box">
+          <div class="login-box">
+            <p id="unlogin">亲爱的用户，请 <a href="javascript:;">[登录]</a></p>
+            <p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，<a href="javascript:logout();"
+                id="dologout">[注销]</a></p>
+          </div>
+          <a class="nav-item clickOn-nav" href="javascript:;" onclick="PTTSendClick('btn','btn-tmjf','天命积分')"><span
+              class="clickOn-nav">01</span>天命积分</a>
+          <a class="nav-item" href="1.html" target="_blank"
+            onclick="PTTSendClick('btn','btn-zxkb','手游资讯')"><span>02</span>资讯快报</a>
+          <a class="nav-item" href="list_11.html" target="_blank"
+            onclick="PTTSendClick('btn','btn-yxsp','游戏视频')"><span>03</span>游戏视频</a>
+        </div>
+      </div>
+    </div>
+    <div class="logo-main">
+      <a href="main.html" target="_blank" onclick="PTTSendClick('btn','logo','天刀手游官网');">
+        <img src="./picture/logo.png" alt="">
+      </a>
+    </div>
+    <div class="bg">
+    </div>
+    <canvas width="1920" height="3150" id="canvas0"></canvas>
+    <canvas width="1920" height="1100" id="canvas1" class="canvas1"></canvas>
+    <div class="points-row">
+      <div class="points" id="tianmingdian"> 我的天命点: <b id="jf_num">0</b>点数 </div>
+    </div>
+    <div class="tab-tit" id="tabTit">
+      <a href="javascript:;" class="tab-t-2 on"></a>
+      <a href="javascript:;" class="tab-t-3"></a>
+    </div>
+    <div class="tab-cont g-cont2" style="display: block">
+      <i class="icon-petal4"></i>
+      <i class="icon-petal5"></i>
+      <i class="icon-petal6"></i>
+      <i class="icon-petal7"></i>
+      <h3><i class="tab-1-cont-t-2"></i></h3>
+      <a href="javascript:tools.dialog.show('diaExchangeRule');" class="btn-bg-w140 btn-dhgz" title="兑换规则">兑换规则</a>
+      <ul class="item-list">
+        <li class="m-top">
+          <div class="item-bg tipsbtn">
+            <img src="./picture/icon-ljty.png" alt="浪迹天涯">
+            <p class="name"> - 端游豪华礼盒 - </p>
+            <div class="tips">
+              <span>
+                <span class="title">共饮明月礼</span> 内含：碎银500金、修为200w、<br> 瑶光染料*5、初级归玉之髓*200、<br> 武道天心令*100、神魄*100、<br>
+                天涯会员30天 </span>
+            </div>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(1);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 剩余库存：<span id="remain1">3000</span>个 <br> 单人限兑换一次 <br> 需<span>200</span>天命点兑换 </div>
+        </li>
+        <li class="m-top">
+          <div class="item-bg">
+            <img src="./picture/icon-sxsw.png" alt="圣绣·素问">
+            <p class="name"> - 圣绣·素问礼盒 - </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(2);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 剩余库存：<span id="remain2">10000</span>个 <br> 单人限兑换一次 <br> 需<span>150</span>天命点兑换 </div>
+        </li>
+        <li class="m-top">
+          <div class="item-bg">
+            <img src="./picture/icon-tmjz.png" alt="天命将至">
+            <p class="name"> - 称号·天命将至 - </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(3);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 单人限兑换一次 <br> 需<span>50</span>天命点兑换 </div>
+        </li>
+        <li>
+          <div class="item-bg">
+            <img src="./picture/icon-bhsl.png" alt="八荒Q版贴纸">
+            <p class="name"> - 八荒徽章 - <br> 【3个】 </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(4);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 剩余库存：<span id="remain4">300</span>个 <br> 单人限兑换一次 <br> 需<span>100</span>天命点兑换 </div>
+        </li>
+        <li class="m-top">
+          <div class="item-bg">
+            <img src="./picture/icon-txsdxg.png" alt="天香伞·洞仙歌">
+            <p class="name"> - 风华·玉碎心法册 - </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(5);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 剩余库存：<span id="remain5">150</span>个 <br> 单人限兑换一次 <br> 需<span>200</span>天命点兑换 </div>
+        </li>
+        <li>
+          <div class="item-bg">
+            <img src="./picture/icon-mzlh.png" alt="龙首面具">
+            <p class="name line1"> - 八荒充电宝 -<br> 【款式随机】 </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(6);" title="立即兑换">立即兑换</a>
+          </div>
+          <div class="info"> 剩余库存：<span id="remain6">60</span>个 <br> 单人限兑换一次 <br> 需<span>300</span>天命点兑换 </div>
+        </li>
+        <li>
+          <div class="item-bg">
+            <img src="./picture/icon-jhcc.png" alt="江湖传承">
+            <p class="name"> 天命站专属手游称号 <br> 【江湖传承】 </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(7);" title="暂未开放兑换">立即兑换</a>
+          </div>
+          <div class="info"> 单人限兑换一次<br> 需<span>50</span>天命点兑换 </div>
+        </li>
+        <li>
+          <div class="item-bg tipsbtn">
+            <img src="./picture/icon-tmlh.png" alt="天命礼盒">
+            <p class="name"> 天涯明月刀手游 <br> 【天命礼盒】 </p>
+            <div class="tips">
+              <span>
+                <span class="title">天命礼盒</span> 碎银*88888，破阵洗灵丸*4，<br>铸神令*2，一级霜铁*5，<br>紫色心法通用残页*1 </span>
+            </div>
+          </div>
+          <div class="btns">
+            <a href="javascript:newExchange(8);" title="暂未开放兑换">立即兑换</a>
+          </div>
+          <div class="info"> 单人限兑换一次<br> 需<span>150</span>天命点兑换 </div>
+        </li>
+        <li>
+          <div class="item-bg">
+            <img src="./picture/icon-none.png" alt="专属外观">
+            <p class="name"> 天涯明月刀手游 <br> 【专属外观】 </p>
+          </div>
+          <div class="btns">
+            <a href="javascript:;" class="gray" title="暂未开放兑换">暂未开放兑换</a>
+          </div>
+          <div class="info"> 单人限兑换一次 </div>
+        </li>
+      </ul>
+      <img src="./picture/character2.png" alt="" class="character2">
+    </div>
+    <div class="tab-cont g-cont3" style="display: none">
+      <i class="icon-petal4"></i>
+      <i class="icon-petal5"></i>
+      <i class="icon-petal6"></i>
+      <i class="icon-petal7"></i>
+      <h3><i class="tab-1-cont-t-3"></i></h3>
+      <div class="table-bar">
+        <table>
+          <tr>
+            <th>获得时间</th>
+            <th>奖励明细</th>
+            <th>领取方式</th>
+          </tr>
+          <tbody id="packageLog">
+          </tbody>
+        </table>
+        <div class="page-bar">
+          <a href="javascript:;" class="prev">上一页</a>
+          <span>1/5</span>
+          <a href="javascript:;" class="prev">下一页</a>
+        </div>
+      </div>
+      <img src="./picture/character2.png" alt="" class="character2">
+    </div>
+    <div class="title-top"></div>
+    <div class="task-group">
+      <ul class="mission clearfix" id="taskRecommend">
+        <li class="mission-box neccery" id="wjTask">
+          <span class="num">01</span>
+          <div class="img-box">
+            <img src="./picture/img-1.jpg">
+          </div>
+          <p> 报名天刀测试团，天刀手游 一睹为快 </p>
+          <div class="mis-points">
+            <p>
+              <span> 天命点数 20</span>
+            </p>
+            <a class="btn-bg-2" href="d7d4.html" id='wjUrl' target="_blank"
+              onclick="PTTSendClick('btn','baoming1',' 立即报名');">立即报名</a>
+            <a class="btn-bg-2" href="javascript:;" id="wjGift" onclick="PTTSendClick('btn','share1',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission icon-recommend"></i>
+        </li>
+        <li class="mission-box">
+          <span class="num">02</span>
+          <div class="img-box">
+            <img src="./picture/img-2.jpg">
+          </div>
+          <p> 每日页面完成签到，获得天命点 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 1/天</span>
+            </p>
+            <a class="btn-qian" href="javascript:amsSubmit(155294,517181);"
+              onclick="PTTSendClick('btn','qiandao',' 签到');">签到</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box neccery" style="display: none">
+          <span class="num">03</span>
+          <div class="img-box">
+            <img src="./picture/img-3.jpg">
+          </div>
+          <p> 敬请期待 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-qianwan" href="javascript:void(0);" onclick="PTTSendClick('btn','qianwang',' 立即前往');">立即前往</a>
+            <a class="btn-bg" href="javascript:void(0);" onclick="PTTSendClick('btn','btn-lq',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box news" style="display: none">
+          <span class="num">03</span>
+          <div class="img-box">
+            <img src="./picture/img-4.jpg">
+          </div>
+          <p> 分享国风欢庆月<br> 共庆年终盛典 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 5</span>
+            </p>
+            <a class="btn-qianwan" href="javascript:void(0);" onclick="PTTSendClick('btn','qianwang',' 立即前往');">立即前往</a>
+            <a class="btn-bg" href="javascript:void(0);" onclick="PTTSendClick('btn','btn-lq',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box news" style="display: none">
+          <span class="num">04</span>
+          <div class="img-box">
+            <img src="./picture/img-5.jpg">
+          </div>
+          <p> 前往天衣阁<br> 打波次元穿越天刀世界 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 5</span>
+            </p>
+            <a class="btn-qianwan" href="javascript:void(0);" onclick="PTTSendClick('btn','qianwang',' 立即前往');">立即前往</a>
+            <a class="btn-bg" href="javascript:void(0);" onclick="PTTSendClick('btn','btn-lq',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="litask3">
+          <span class="num">03</span>
+          <div class="img-box">
+            <img src="./picture/img-6.jpg">
+          </div>
+          <p> 加入官方Q群/官方微信群， 和小伙伴一起愉快的<br>玩耍吧！ </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-bg" href="javascript:" id="joinWechat" onclick="PTTSendClick('btn','jiaru',' 立即加入');"
+              target="_blank">立即加入</a>
+            <a class="btn-bg" id="task3" href="javascript:;" onclick="PTTSendClick('btn','lingqu2',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="litask4">
+          <span class="num">04</span>
+          <div class="img-box">
+            <img src="./picture/img-7.jpg">
+          </div>
+          <p> 关注天刀手游微信圈子/手Q订阅站， <br> 精彩活动、丰富福利 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-bg-2" href="javascript:;" target="_blank" id="followQuanzi"
+              onclick="PTTSendClick('btn','canyu',' 点击参与');">点击参与</a>
+            <a class="btn-bg-2" id="task4" href="javascript:;" onclick="PTTSendClick('btn','get1',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="litask5">
+          <span class="num">05</span>
+          <div class="img-box">
+            <img src="./picture/img-8.jpg">
+          </div>
+          <p> 关注天涯明月刀手游B站，游戏视频大赏 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-bg" href="javascript:" id="followBWeb" onclick="PTTSendClick('btn','qianwang',' 立即前往');"
+              target="_blank">立即前往</a>
+            <a class="btn-bg" id="task5"
+              href="javascript:javascript:amsCfg_581330.sData.iTaskId = 5;amsSubmit(155294,581330);"
+              onclick="PTTSendClick('btn','lingqu',' 领取奖励');">领取奖励</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box">
+          <span class="num">06</span>
+          <div class="img-box">
+            <img src="./picture/img-9.jpg">
+          </div>
+          <p> 邀请好友，一起浪迹天涯。每邀请一位好友<br>可获10天命点 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-bg-2" href="javascript:TGDialogS('dia5');" id="showInvList"
+              onclick="PTTSendClick('btn','share',' 邀请好友');">邀请好友</a>
+            <a class="btn-bg-2" href="javascript:;" id="showRankList"
+              onclick="PTTSendClick('btn','rank',' 邀请排行');">邀请排行</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="invTask">
+          <span class="num">07</span>
+          <div class="img-box">
+            <img src="./picture/img-10.jpg">
+          </div>
+          <p> 输入好友赠与的邀请码，与邀请 <br> 者均可获积分奖励 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <div class="row clearfix">
+              <input id="inputCode" placeholder="填写邀请码">
+              <a class="btn-bg" href="javascript:ReserveInvite();"
+                onclick="PTTSendClick('btn','shareCode',' 绑定邀请码');">绑定邀请码</a>
+            </div>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="followTask">
+          <span class="num">08</span>
+          <div class="img-box">
+            <img src="./picture/img-11.jpg">
+          </div>
+          <p> 关注微博微信 获取最新资讯 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <a class="btn-bg follow follow-weibo" href="javascript:window.open('https://weibo.com/u/6449477281');"
+              target="_blank" onclick="PTTSendClick('btn','sina',' 关注官方微博');">关注官方微博</a>
+            <a class="btn-bg follow follow-weixin" href="javascript:guide('#wechat');"
+              onclick="PTTSendClick('btn','wechat',' 关注官方微信');">关注官方微信</a>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box" id="shareTask">
+          <span class="num">09</span>
+          <div class="img-box">
+            <img src="./picture/img-12.jpg">
+          </div>
+          <p> 分享本活动给更多好友 </p>
+          <div class="mis-points">
+            <p>
+              <span>天命点数 10</span>
+            </p>
+            <div id="tg-sns"></div>
+          </div>
+          <i class="icon-mission"></i>
+        </li>
+        <li class="mission-box mission-box1">
+          <span class="num">10</span>
+          <div class="img-box1">
+            <img src="./picture/img-13.png">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="dialog" id="dia7" style="display:none">
+    <div class="dia-con">
+      <div class="dia-bg-top"></div>
+      <div class="con">
+        <p> 微信账号和QQ账号的任务、积分信息不可互通。 </p>
+        <div class="btn-group">
+          <a class="wechat-btn" id="wxLogin" href="javascript:;" onclick="PTTSendClick('btn','wechat',' 微信登录');"></a>
+          <a class="qq-btn" href="javascript:LoginManager.login();" onclick="PTTSendClick('btn','qq',' qq登录');"></a>
+        </div>
+      </div>
+      <div class="dia-bg-bottom"></div>
+    </div>
+    <a class="dia-close" href="javascript:showDialog.hide()"></a>
+  </div>
+</body>
+<script src="./lib/jQuery/jquery-3.4.1.min.js"></script>
+<script src="./lib/swiper/js/swiper.min.js"></script>
+<script src="./js/recruit.js"></script>
+
+</html>
