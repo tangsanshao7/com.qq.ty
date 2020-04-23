@@ -2217,6 +2217,8 @@ input {
 .device .pagination .swiper-pagination-switch.swiper-active-switch {
   background: #fff;
 }
+
+
 .device .arrow-left {
   position: absolute;
   right: 470px;
@@ -2250,4 +2252,179 @@ input {
 .title {
   font-size: 25px;
   margin-bottom: 10px;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 111;
+}
+.pagination .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.pagination .swiper-pagination-switch {
+  background: #000;
+  width: 30px;
+  height: 5px;
+  border-radius: 0;
+}
+.pagination .swiper-pagination-switch.swiper-active-switch {
+  background: #fff;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.text-groups {
+  z-index: 50;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  background: #33bbc1;
+  width: 410px;
+  height: 225px;
+}
+.text-groups .text-wrap {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.text-groups .text-wrap p {
+  text-indent: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.lottery-bar.grey .lotterycontent_slight,
+.lottery-bar.grey .lotterycontent_start {
+  animation: none !important;
+  -webkit-animation: none !important;
+  pointer-events: none;
+}
+.lotterycontent_slight,
+.lotterycontent_start {
+  width: 164px !important;
+  height: 191px !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+  outline: 0;
+}
+.lotterycontent_start {
+  -webkit-animation: btn-scale 4s linear infinite !important;
+  animation: btn-scale 4s linear infinite !important;
+}
+@-webkit-keyframes btn-scale {
+  0% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  43.75% {
+    opacity: 0.9;
+    filter: brightness(80%);
+  }
+  62.5% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  81.25% {
+    opacity: 0.9;
+    filter: brightness(120%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+@keyframes btn-scale {
+  0% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  43.75% {
+    opacity: 0.9;
+    filter: brightness(80%);
+  }
+  62.5% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  81.25% {
+    opacity: 0.9;
+    filter: brightness(120%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+.lotterycontent_disable {
+  background: 0 0 !important;
+}
+.dia1 {
+  position: relative;
+}
+.dia1 .dia-con {
+  display: table;
+  background: 0 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.dia1 .dia-con p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #31b8be;
+  text-align: center;
+}
+.dia1 > a {
+  display: block;
+  right: -20px;
+  top: -20px;
+}
+
+.line_box {
+  width: 1144px;
+  margin-left: 35px;
+  height: 104px;
+}
+.line_box p {
+  font-weight: bold;
+  text-align: center;
+  width: 82px;
+  font-size: 20px;
+  color: #31b8be;
+  float: left;
+  padding-top: 20px;
+}
+.list_line {
+  background: url(../image/line.png) no-repeat 50% 50%;
+  width: 1044px;
+  float: right;
+}
+.list_line li {
+  float: left;
+  width: 130px;
+  font-size: 14px;
+  color: #3e465d;
+  text-align: center;
+}
+.list_line li span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
 }

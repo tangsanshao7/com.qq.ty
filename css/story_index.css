@@ -1,0 +1,254 @@
+.load_page {
+  width: 100%;
+  color: #a19891;
+  font-size: 16px;
+  position: relative;
+  min-width: 1200px;
+  overflow: hidden;
+}
+
+.idx_logo {
+  background: url("../image/logo.png") no-repeat;
+  width: 217px;
+  height: 68px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 36px;
+  z-index: 9;
+}
+
+.idx_page {
+  background: url("../image/idx_bg.jpg") top center no-repeat;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.idx_page .page {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 526px;
+  z-index: 99;
+}
+
+.idx_page .btn_into {
+  width: 433px;
+  height: 433px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.idx_page .btn_into.on {
+  animation: oScale 2s ease 0s both;
+  -webkit-animation: oScale 2s ease 0s both;
+  -moz-animation: oScale 2s ease 0s both;
+}
+
+.idx_page .btn_border {
+  background: url("../image/btn_border.png") no-repeat;
+  width: 433px;
+  height: 433px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateBox 10s linear 0s infinite both;
+  -webkit-animation: rotateBox 10s linear 0s infinite both;
+  -moz-animation: rotateBox 10s linear 0s infinite both;
+}
+
+.idx_page .btn_box {
+  background: url("../image/btn_box.png") no-repeat;
+  width: 268px;
+  height: 268px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -134px;
+  margin-top: -134px;
+}
+
+.idx_page .btn_name {
+  background: url("../image/btn_name.png") no-repeat;
+  width: 125px;
+  height: 39px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -62.5px;
+  margin-top: -14.5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.idx_page .btn_left {
+  background: url("../image/btn_left.png") no-repeat;
+  width: 195px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: -50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.idx_page .btn_right {
+  background: url("../image/btn_right.png") no-repeat;
+  width: 195px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: -50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@keyframes rotateBox {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotateBox {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotateBox {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+.idx_page .btn_into:hover .btn_left {
+  left: -80px;
+}
+
+.idx_page .btn_into:hover .btn_right {
+  right: -80px;
+}
+
+.idx_page .btn_into:hover .btn_name {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  margin-top: -15px;
+}
+
+.idx_page .btn_into:hover .btn_border {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+}
+
+@keyframes oScale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes oScale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes oScale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#video {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+  z-index: 1;
+}
+
+body {
+  min-width: 1300px;
+}
+
+#footer_ieg {
+  position: relative;
+}
+.wrap_ieg {
+  font: 12px verdana;
+  text-align: center;
+  padding: 15px 0;
+  background: #000;
+}
+.wrap_ieg,
+.wrap_ieg a {
+  color: #a8a8a8;
+}
+.wrap_ieg .e {
+  font-size: 10px;
+  padding: 3px 0;
+  -webkit-text-size-adjust: none;
+}
