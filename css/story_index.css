@@ -235,7 +235,9 @@ body {
 }
 
 #footer_ieg {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+
 }
 .wrap_ieg {
   font: 12px verdana;

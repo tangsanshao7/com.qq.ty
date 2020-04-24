@@ -799,6 +799,18 @@ ul {
   filter: gray;
   pointer-events: none;
 }
+#_overlay_ {
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  height: 5180px;
+  z-index: 9990;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  display: none;
+}
 #_overlay_,
 .ost,
 .ost_box,
@@ -1488,6 +1500,15 @@ input {
   position: absolute;
   top: 40px;
   right: 22px;
+}
+#dia7 {
+  visibility: visible;
+  position: fixed;
+  z-index: 9991;
+  left: 50%;
+  top: 50%;
+  margin-top: -107px;
+  margin-left: -282.5px;
 }
 #dia7 p {
   text-align: center;
@@ -2217,7 +2238,6 @@ input {
 .device .pagination .swiper-pagination-switch.swiper-active-switch {
   background: #fff;
 }
-
 
 .device .arrow-left {
   position: absolute;
