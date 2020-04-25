@@ -23,18 +23,21 @@ $(function () {
     $('.sdi-div').toggle();
   })
 
+  var mySwiper = new Swiper('.swiper-container', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    autoplay: {
+      delay: 7000,
+      stopOnLastSlide: false,
+      // disableOnInteraction: true,
+      disableOnInteraction: false,
+    },
 
-  $('.sec_box').on('click', 'a', function () {
-    $('.bg').css({
-      'animation': ' imgclick 1s'
-    })
-    // console.log($(this));
-    var href = $(this).attr('html')
-    // console.log($(this).prop('html'));
-    setTimeout(function () {
-      // console.log($(this).attr('html'));
-      location.href = href;//PC网页式跳转
-    }, 1000);
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
   })
 
