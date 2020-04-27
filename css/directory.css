@@ -421,3 +421,37 @@
   position: absolute;
   z-index: 1111;
 }
+.dia-con {
+  background: url(../picture/dialog.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 747px;
+  height: 423px;
+  display: none;
+  z-index: 9999;
+}
+.dia-close {
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(350px, -220px);
+  display: none;
+  z-index: 9999;
+}
+
+#_overlay_ {
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  height: 1100px;
+  z-index: 9998;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  display: none;
+}

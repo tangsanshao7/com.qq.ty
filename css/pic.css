@@ -317,7 +317,7 @@
 }
 .history {
   background: url(../picture/history_bg.jpg) top center no-repeat;
-  height: 900px;
+  height: 970px;
   /* position: relative; */
   width: 100%;
   position: absolute;
@@ -409,8 +409,15 @@
   top: 20px;
   right: 240px;
   z-index: 3;
-
+}
+.swing {
   animation: swing 5s 0.2s linear infinite both;
+  animation-play-state: running;
+}
+.swing:hover {
+
+  animation-play-state:paused;
+
 }
 .btn_next {
   background: url(../picture/btn_next.png) no-repeat;
@@ -421,8 +428,6 @@
   top: 75px;
   right: 70px;
   z-index: 3;
-
-  animation: swing 5s 1.2s linear infinite both;
 }
 .people01_box {
   position: absolute;

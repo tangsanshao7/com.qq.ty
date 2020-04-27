@@ -24,7 +24,7 @@ $(function () {
   })
 
 
-  $('.sec_box').on('click', 'a', function () {
+  $('.sec_box.active1').on('click', 'a', function () {
     $('.bg').css({
       'animation': ' imgclick 1s'
     })
@@ -36,6 +36,17 @@ $(function () {
       location.href = href;//PC网页式跳转
     }, 1000);
 
+  })
+
+  $('.sec_box.active2').on('click', function () {
+    $('.dia-con').show();
+    $('.dia-close').show();
+    $('#_overlay_').show();
+  })
+  $('.dia-close').on('click', function () {
+    $('.dia-con').hide();
+    $('.dia-close').hide();
+    $('#_overlay_').hide();
   })
 
 })
