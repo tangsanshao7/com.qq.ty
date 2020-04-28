@@ -475,7 +475,6 @@
   margin-left: -124px;
   top: 720px;
   animation: inc 1.5s infinite both;
-  animation: inc 1.5s infinite both;
 }
 .partner01 .pagebox2 {
   background: url(../image/bg_bao02.jpg) top center no-repeat;
@@ -604,6 +603,278 @@
   left: 70px;
   top: 920px;
 }
+.partner01 .page3 {
+  width: 1450px;
+  margin: 0 auto;
+  position: relative;
+  height: 850px;
+}
+.partner01 .page3 .tit_art {
+  position: absolute;
+  top: 240px;
+  left: 0;
+}
+.partner01 .page3 .tit_img {
+  position: absolute;
+  top: 140px;
+  left: 625px;
+}
+.partner01 .page4 {
+  padding-top: 197px;
+}
+.partner01 .page4 .video_box {
+  margin: 0 auto;
+  width: 1385px;
+  height: 654px;
+}
+#plv_01 video {
+  width: 1385px;
+  height: 654px;
+}
+.partner01 .page5 {
+  width: 1450px;
+  margin: 0 auto;
+  position: relative;
+  height: 900px;
+}
+.partner01 .page5 .zj_box {
+  margin: 0 auto;
+  width: 1187px;
+  height: 694px;
+  padding-top: 150px;
+}
+.partner01 .page6 {
+  width: 1450px;
+  margin: 0 auto;
+  position: relative;
+  height: 780px;
+  padding-top: 147px;
+}
+.cos_img {
+  position: relative;
+}
+.partner01 .show-block .imgs_01 {
+  animation: fadeIn 1s 0.5s ease both;
+  background: url(../image/pg01_img01.jpg) no-repeat;
+  width: 199px;
+  height: 375px;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 38px;
+  z-index: 1;
+}
+.partner01 .show-block .imgs_02 {
+  animation: fadeIn 1s 1s ease both;
+  background: url(../image/pg01_img02.jpg) no-repeat;
+  width: 552px;
+  height: 379px;
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: 218px;
+  z-index: 0;
+}
+.partner01 .show-block .imgs_03 {
+  animation: fadeIn 1s 1.5s ease both;
+  background: url(../image/pg01_img03.jpg) no-repeat;
+  width: 264px;
+  height: 404px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 646px;
+  z-index: 3;
+}
+.partner01 .show-block .imgs_04 {
+  animation: fadeIn 1s 2s ease both;
+  background: url(../image/pg01_img04.jpg) no-repeat;
+  width: 280px;
+  height: 162px;
+  display: block;
+  position: absolute;
+  top: 326px;
+  left: 870px;
+  z-index: 2;
+}
+.partner01 .show-block .imgs_05 {
+  animation: fadeIn 1s 2.5s ease both;
+  background: url(../image/pg01_img05.jpg) no-repeat;
+  width: 216px;
+  height: 309px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 928px;
+  z-index: 5;
+}
+.partner01 .show-block .imgs_06 {
+  animation: fadeIn 1s 3s ease both;
+  background: url(../image/pg01_img06.jpg) no-repeat;
+  width: 244px;
+  height: 366px;
+  display: block;
+  position: absolute;
+  top: 61px;
+  left: 1140px;
+  z-index: 6;
+}
+.partner01 .people01_box .btn_xq {
+  top: 360px;
+  left: 100px;
+}
+.partner01 .people02_box .btn_xq {
+  top: 300px;
+  left: 100px;
+}
+.partner01 .people03_box .btn_xq {
+  top: 400px;
+  left: 90px;
+}
+.partner01 .people04_box .btn_xq {
+  top: 360px;
+  left: 80px;
+}
+.partner01 .people05_box .btn_xq {
+  top: 410px;
+  left: 110px;
+}
+.partner01 .btn_xq {
+  background: url(../picture/btn_xq.png) no-repeat;
+  width: 127px;
+  height: 37px;
+  display: none;
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+}
+.partner01 .page7 {
+  width: 1450px;
+  margin: 0 auto;
+  position: relative;
+  height: 992px;
+}
+.partner01 .page7 .people01_box {
+  position: absolute;
+  top: 417px;
+  left: 28px;
+  width: 400px;
+  overflow: hidden;
+  height: 732px;
+  transition: all 0.5s;
+}
+.partner01 .page7 .people01_box:hover {
+  transform: translateY(-5px);
+}
+.partner01 .page7 .people01_box img {
+  position: absolute;
+  top: 0px;
+  left: -120px;
+  pointer-events: none;
+}
+
+.partner01 .page7 .people02_box {
+  position: absolute;
+  top: 528px;
+  left: 270px;
+  width: 280px;
+  height: 621px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.partner01 .page7 .people02_box:hover {
+  transform: translateY(-5px);
+}
+.partner01 .page7 .people02_box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.partner01 .page7 .people03_box {
+  position: absolute;
+  top: 417px;
+  left: 520px;
+  width: 445px;
+  height: 781px;
+  transition: all 0.5s;
+}
+.partner01 .page7 .people03_box:hover {
+  transform: translateY(-5px);
+}
+.partner01 .page7 .people03_box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.partner01 .page7 .people04_box {
+  position: absolute;
+  top: 518px;
+  left: 815px;
+  width: 280px;
+  height: 689px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.partner01 .page7 .people04_box:hover {
+  transform: translateY(-5px);
+}
+.partner01 .page7 .people04_box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+
+.partner01 .page7 .people05_box {
+  position: absolute;
+  top: 330px;
+  left: 994px;
+  width: 488px;
+  height: 815px;
+  transition: all 0.5s;
+  transition: all 0.5s;
+}
+.partner01 .page7 .people05_box:hover {
+  transform: translateY(-5px);
+}
+.partner01 .page7 .people05_box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+.partner01 .page7 .music_05 {
+  width: 91px;
+  height: 440px;
+  background-position: -701px -202px;
+  display: block;
+  position: absolute;
+  left: 1450px;
+  top: 105px;
+  animation: swing 6s 1.5s linear infinite both;
+}
+.partner01 .page7 .music_05:hover {
+  animation-play-state: paused;
+}
+.partner01 .people01_box:hover .btn_xq {
+  display: block;
+}
+.partner01 .people02_box:hover .btn_xq {
+  display: block;
+}
+.partner01 .people03_box:hover .btn_xq {
+  display: block;
+}
+.partner01 .people04_box:hover .btn_xq {
+  display: block;
+}
+.partner01 .people05_box:hover .btn_xq {
+  display: block;
+}
 @keyframes slDown {
   from {
     transform: translateY(-300px);
@@ -639,7 +910,74 @@
     transform: translateY(0);
   }
 }
-
+#side-nav {
+  position: fixed;
+  top: 245px;
+  left: 10px;
+  display: none;
+}
+.side-nav {
+  width: 178px;
+  z-index: 99;
+  left: 10px !important;
+}
+.nav-inner {
+  width: 178px;
+  height: 430px;
+  background: url(../picture/nav-inner.png) no-repeat;
+  padding-top: 58px;
+}
+.nav-inner ul li a {
+  width: 178px;
+  height: 32px;
+  background: url(../picture/nav-inner1.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin-bottom: 34px;
+}
+.nav-inner ul li a.nav1 {
+  background-position: 0 -59px;
+}
+.nav-inner ul li a.nav2 {
+  background-position: 0 -125px;
+}
+.nav-inner ul li a.nav3 {
+  background-position: 0 -186px;
+}
+.nav-inner ul li a.nav4 {
+  background-position: 0 -247px;
+}
+.nav-inner ul li a.nav5 {
+  background-position: 0 -307px;
+}
+.nav-inner ul li a.nav6 {
+  background-position: 0 -365px;
+}
+.nav-inner ul .on a.nav1,
+.nav-inner ul li:hover a.nav1 {
+  background-position: -179px -59px;
+}
+.nav-inner ul .on a.nav2,
+.nav-inner ul li:hover a.nav2 {
+  background-position: -179px -125px;
+}
+.nav-inner ul .on a.nav3,
+.nav-inner ul li:hover a.nav3 {
+  background-position: -179px -186px;
+}
+.nav-inner ul .on a.nav4,
+.nav-inner ul li:hover a.nav4 {
+  background-position: -179px -247px;
+}
+.nav-inner ul .on a.nav5,
+.nav-inner ul li:hover a.nav5 {
+  background-position: -179px -307px;
+}
+.nav-inner ul .on a.nav6,
+.nav-inner ul li:hover a.nav6 {
+  background-position: -179px -365px;
+}
 @keyframes swing {
   20%,
   40%,
@@ -668,7 +1006,6 @@
   background: #1c1c1c;
   text-align: center;
   width: 100%;
-  position: absolute;
   bottom: -95px;
   z-index: 111;
 }
