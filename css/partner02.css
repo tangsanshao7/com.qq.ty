@@ -456,7 +456,7 @@
   position: relative;
   height: 1080px;
 }
-.partner01 .pg01_xx {
+.partner01 .pg02_xx {
   background: url(../image/pg02_xx.png) no-repeat;
   width: 258px;
   height: 214px;
@@ -568,7 +568,7 @@
   animation: swing 4.5s 2s linear infinite both;
 }
 .partner01 .page2 .people_sy .people_zy {
-  background: url(../image/pg01_zy.png) no-repeat;
+  background: url(../image/pg02_zy.png) no-repeat;
   width: 557px;
   height: 45px;
   display: block;
@@ -577,7 +577,7 @@
   top: 622px;
 }
 .partner01 .page2 .people_sy .people_wq {
-  background: url(../image/pg01_wq.png) no-repeat;
+  background: url(../image/pg02_wq.png) no-repeat;
   width: 557px;
   height: 45px;
   display: block;
@@ -586,7 +586,7 @@
   top: 721px;
 }
 .partner01 .page2 .people_sy .people_xq {
-  background: url(../image/pg01_xq.png) no-repeat;
+  background: url(../image/pg02_xq.png) no-repeat;
   width: 557px;
   height: 45px;
   display: block;
@@ -595,7 +595,7 @@
   top: 820px;
 }
 .partner01 .page2 .people_sy .people_xh {
-  background: url(../image/pg01_xh.png) no-repeat;
+  background: url(../image/pg02_xh.png) no-repeat;
   width: 557px;
   height: 45px;
   display: block;

@@ -37,7 +37,6 @@ $(function () {
     console.log(mscList[$(this).index()]);
     msc.play()
   })
-keydown
   $(".nav-inner").on('click', 'li', function () {
     // $(window).scrollTop();
     console.log($(this).attr("class"));
