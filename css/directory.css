@@ -446,8 +446,8 @@
 #_overlay_ {
   background-color: rgb(0, 0, 0);
   border-top: 1px solid rgb(0, 0, 0);
-  position: absolute;
-  height: 1100px;
+  position: fixed;
+  height: 937px;
   z-index: 9998;
   width: 100%;
   left: 0px;

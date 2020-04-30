@@ -43,6 +43,21 @@ $(function () {
     $('.dia-close').show();
     $('#_overlay_').show();
   })
+  $('.nav_07').on('click', function () {
+    $('.dia-con').show();
+    $('.dia-close').show();
+    $('#_overlay_').show();
+  })
+  $('.nav_08').on('click', function () {
+    $('.dia-con').show();
+    $('.dia-close').show();
+    $('#_overlay_').show();
+  })
+  $('.nav_09').on('click', function () {
+    $('.dia-con').show();
+    $('.dia-close').show();
+    $('#_overlay_').show();
+  })
   $('.dia-close').on('click', function () {
     $('.dia-con').hide();
     $('.dia-close').hide();
