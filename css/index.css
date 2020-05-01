@@ -59,7 +59,7 @@ body {
   height: 2750px;
 }
 .sp {
-  background: url(../image/sp1.png) no-repeat;
+  background: url(../image/sp.png) no-repeat;
 }
 
 @keyframes fade {
@@ -268,9 +268,7 @@ body {
   font-size: 18px;
   margin-bottom: 35px;
 }
-.sp1 {
-  background: url(../image/sp11.png) no-repeat;
-}
+
 .kv .btn-yy .btn {
   font-size: 26px;
   position: absolute;
@@ -1058,7 +1056,7 @@ body {
 }
 .lottery-ft a {
   display: inline-block;
-  background: url(../image/sp1.png) no-repeat;
+  background: url(../image/sp.png) no-repeat;
   margin: 0 15px;
   overflow: hidden;
   text-indent: -9999px;
@@ -1098,9 +1096,10 @@ body {
   margin: 0 auto;
   font-weight: bold;
   background: url(../image/t11.png) no-repeat;
+  background-position-y: -20px;
   line-height: 100px;
-  padding-top: 33px;
-  padding-left: 20px;
+  padding-top: 23px;
+  padding-left: 51px;
   position: relative;
   z-index: 10;
 }
