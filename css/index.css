@@ -59,7 +59,7 @@ body {
   height: 2750px;
 }
 .sp {
-  background: url(../image/sp.png) no-repeat;
+  background: url(../image/sp1.png) no-repeat;
 }
 
 @keyframes fade {
@@ -880,11 +880,11 @@ body {
   padding-top: 30px;
 }
 
-.event3-right .event-right-video{
+.event3-right .event-right-video {
   display: none !important;
 }
-.event-right-video.active{
-  display: block  !important;
+.event-right-video.active {
+  display: block !important;
 }
 .inviteyy {
   position: relative;
@@ -1056,7 +1056,7 @@ body {
 }
 .lottery-ft a {
   display: inline-block;
-  background: url(../image/sp.png) no-repeat;
+  background: url(../image/sp1.png) no-repeat;
   margin: 0 15px;
   overflow: hidden;
   text-indent: -9999px;
